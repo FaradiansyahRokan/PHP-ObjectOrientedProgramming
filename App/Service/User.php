@@ -1,5 +1,5 @@
 <?php
-namespace Service\User;
+namespace Service;
 class User {
     public function __construct()
     {
