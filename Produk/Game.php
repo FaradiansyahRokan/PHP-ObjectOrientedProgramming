@@ -1,4 +1,5 @@
 <?php
+require_once "produk.php";
 class Game extends Produk implements Cek
 {
     private $wktBermain;
