@@ -1,6 +1,6 @@
 <?php
 
-class produk{
+class pp{
     private $judul ,$penulis ,$penerbit, $harga;
 
     public function __construct($judul = 'Judul' ,$penulis = 'penulis' ,$penerbit = 'penerbit', $harga = 0)
@@ -20,7 +20,7 @@ class produk{
     } 
 }
 
-class komik extends produk{
+class komik extends pp{
     private $jumlahHalaman;
 
     public function __construct($judul ,$penulis ,$penerbit, $harga, $jumlahHalaman)
@@ -37,7 +37,7 @@ class komik extends produk{
     }
 }
 
-class game extends produk{
+class game extends pp{
     private $waktuMain;
 
     public function __construct($judul ,$penulis ,$penerbit, $harga,$waktuMain)
