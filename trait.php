@@ -50,5 +50,6 @@ return $this->bold($this->post->getTitle());
 }
 $postMutator = new PostMutator(new Post('Judul', 'Ini contoh
 content dari berita.'));
+echo $postMutator->boldTitle();
 
 
