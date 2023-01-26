@@ -125,7 +125,7 @@ class oi{
         static
             function helo(){
 
-                 return "ini static ke- " . self::$angka++ . " Kali";
+                return "ini static ke- " . self::$angka++ . " Kali";
             }
 }
 
