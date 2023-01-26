@@ -22,7 +22,7 @@ return '<b>STATIC LATE BINDINGS</b>';
 }
 }
 echo ChildStringMutator::boldItalic('Muhamad Surya Iksanudin'
-);
+) . PHP_EOL;
 // Bila melihat contoh diatas, seharusnya ketika kita memanggil ChildStringMutator::boldItalic('Muhamad Surya Iksanudin') maka output-nya adalah <i><b>STATIC LATE BINDINGS</b></i> karena kita telah meng-override method bold() pada class ChildStringMutator . 
 
 
@@ -49,7 +49,7 @@ public static function bold(string $word): string
 return '<b>STATIC LATE BINDINGS</b>';
 }
 }
-echo ChildStringMutator::boldItalic('Muhamad Surya Iksanudin'
-);
+echo ChildStringMutator2::boldItalic('Muhamad Surya Iksanudin'
+) . PHP_EOL;
 
 
