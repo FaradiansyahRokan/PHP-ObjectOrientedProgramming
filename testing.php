@@ -115,6 +115,22 @@ $ixSMP = new SMP("9 A");
 $ixSMP->setDataSMP(12,9,5,3,1);
 echo $ixSMP->getProfileClass() . PHP_EOL;
 $XII = new SMK("11 tkj");
-echo $XII->profile();
+echo $XII->profile() . PHP_EOL;
 
 
+// Static Class
+class oi{
+    public static $angka = 1;
+    public
+        static
+            function helo(){
+
+                 return "ini static ke- " . self::$angka++ . " Kali";
+            }
+}
+
+$nilai = new oi;
+echo $nilai->helo() . PHP_EOL;
+echo $nilai->helo() . PHP_EOL;
+echo $nilai->helo() . PHP_EOL;
+echo $nilai->helo() . PHP_EOL;
