@@ -18,7 +18,13 @@ public static function calculate(int $number)
 return ($number % 0); //Bila menggunakan $number / 0
 }
 }
+try{
 Errorable::calculate(7);
+}
+catch (DivisionByZeroError $e){
+    $e->getMessage();
+    echo PHP_EOL;
+}
 echo 'Ini tidak dieksekusi';
 echo PHP_EOL;
 
