@@ -41,9 +41,11 @@ nda gunakan.');
 try {
 $connection = new Connection();
 $connection->connect();
-} catch (RuntimeException $e) {
-echo $e->getMessage();
-echo PHP_EOL;
+}catch (RuntimeException $r){
+    echo "ERROR" . PHP_EOL;
+} catch (DivisionByZeroError $e) {
+    echo $e->getMessage();
+    echo PHP_EOL;
 }
 echo 'Ini tetap dieksekusi';
 echo PHP_EOL;
