@@ -28,6 +28,8 @@ catch (DivisionByZeroError $e){
 echo 'Ini tidak dieksekusi';
 echo PHP_EOL;
 
+
+
 class Connection1
 {
 public function connect()
