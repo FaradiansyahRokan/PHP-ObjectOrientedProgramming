@@ -9,4 +9,20 @@ $helloWorld = new class implements helloWorld{
     }
 };
 
+// anonymousClass Juga mendukung Constructor Seeperti Contoh Berikut
+
+$helloWorld = new class("anonymousClass") implements helloWorld{
+    private $name;
+
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
+
+    function sayHello(): void
+    {
+        echo "hello $this->name" . PHP_EOL;
+    }
+};
 $helloWorld->sayHello();
+
