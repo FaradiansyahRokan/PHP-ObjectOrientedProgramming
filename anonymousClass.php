@@ -11,7 +11,7 @@ $helloWorld = new class implements helloWorld{
 
 // anonymousClass Juga mendukung Constructor Seeperti Contoh Berikut
 
-$helloWorld = new class("anonymousClass") implements helloWorld{
+$helloWorld = new class("Rokan") implements helloWorld{
     private $name;
 
     public function __construct($name)
