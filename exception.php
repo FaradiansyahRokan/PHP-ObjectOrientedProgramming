@@ -8,8 +8,8 @@ asikan method connect() sesuai dengan database driver yang A
 nda gunakan.');
 }
 }
-// $connect = new Connection;
-// echo $connect->connect();
+$connect = new Connection;
+echo $connect->connect();
 
 class Errorable
 {
