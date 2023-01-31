@@ -8,3 +8,5 @@ $helloWorld = new class implements helloWorld{
         echo "ini Adalah anonymous Class" . PHP_EOL;
     }
 };
+
+$helloWorld->sayHello();
