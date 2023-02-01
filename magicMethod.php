@@ -5,7 +5,7 @@ private $name;
 public function __set($property, $value)
 {
 if ('name' === $property) {
-$this->name = $value;
+$this->{$property} = $value;
 } else {
 throw new ParseError(sprintf('Undefined property
 %s in class %s', $property, __CLASS__));
@@ -13,4 +13,4 @@ throw new ParseError(sprintf('Undefined property
 }
 }
 $magic = new MagicMethod();
-$magic->name = 'Muhamad Surya Iksanudin';
+$magic->name = 'Rokan Subi Faradiansyah';
