@@ -15,7 +15,7 @@ throw new ParseError(sprintf('Undefined property
 $magic = new MagicMethod();
 $magic->name = 'Rokan Subi Faradiansyah';
 
-
+//  __toString
 class Student{
     public $id;
     public $name;
@@ -33,4 +33,6 @@ $student->name = "rokan";
 $student->kelas = "X RPL";
 
 $string = (string) $student;
-echo $string . PHP_EOL;
+
+
+
