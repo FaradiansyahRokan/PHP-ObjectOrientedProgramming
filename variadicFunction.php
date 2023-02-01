@@ -1,13 +1,13 @@
 <?php
 class Variadic
 {
-public static function foo(int $number)
+public static function foo(int...$number)
 {
-var_dump($number);
+return array_sum($number) . PHP_EOL;
 }
 public static function fuu(int $num){
 var_dump(func_get_args());
 }
 }
-Variadic::foo(7, 'ini', 'tetap', 'masuk');
+echo Variadic::foo(1, 2, 3, 10);
 Variadic::fuu(10);
