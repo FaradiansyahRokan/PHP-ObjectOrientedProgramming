@@ -14,7 +14,7 @@ throw new ParseError(sprintf('Undefined property
 }
 }
 $magic = new MagicMethod();
-echo $magic->name = "Rokan Subi Faradiansyah" . PHP_EOL;
+// echo $magic->name = "Rokan Subi Faradiansyah" . PHP_EOL;
 
 
 //  __toString
@@ -56,7 +56,7 @@ class Get{
     // echo $get->name . PHP_EOL;
     try{
         $get = new Get('Muhamad Surya Iksanudin');
-        echo $get->name . PHP_EOL;
+        // echo $get->name . PHP_EOL;
         $get->__get("rokan");
         $get->ppp;
     }catch (ParseError $p){
@@ -100,6 +100,19 @@ $obj = new unsets;
 
 // __sleep() dan __wakeup()
 
+class sleep{
+    private $user = [
+        'nama' => 'rokan',
+        'alamat' => 'Bandung'
+    ];
+
+    public function __sleep()
+    {
+        return ['user'];
+    }
+}
+$slp = new sleep;
+var_dump(serialize($slp));
 
 
 
