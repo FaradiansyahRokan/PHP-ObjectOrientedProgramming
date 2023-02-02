@@ -62,7 +62,31 @@ class Get{
     }catch (ParseError $p){
         $p->getMessage();
     }
-    
+
+// __iiset() dan __unset()
+
+class iset{
+    private $name;
+
+    public function __isset($property)
+    {
+        if('name' === $property){
+            return true;
+        }
+    }
+}
+$isset = new iset();
+// var_dump(isset($isset->name));
+
+class unsets{
+    private $user = [
+        'nama' => 'rokan',
+        'alamat' => 'Bandung'
+    ];
+}
+
+$obj = new unsets;
+var_dump($obj);
     
 
     
