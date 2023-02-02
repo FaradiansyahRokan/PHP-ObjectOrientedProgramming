@@ -101,18 +101,28 @@ $obj = new unsets;
 // __sleep() dan __wakeup()
 
 class sleep{
-    private $user = [
+    protected $user = [
         'nama' => 'rokan',
         'alamat' => 'Bandung'
-    ];
+    ],
+    $ktp = [1, 2, 3];
 
     public function __sleep()
     {
-        return ['user'];
+        return ['ktp'];
     }
 }
+
+class Csleep extends sleep{
+    private $z = [
+        'nama' => 'Suhbi',
+        'alamt' => 'Bogor'
+    ];
+}
 $slp = new sleep;
+$C = new Csleep;
 var_dump(serialize($slp));
+var_dump(serialize($C));
 
 
 
