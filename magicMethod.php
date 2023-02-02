@@ -44,7 +44,7 @@ class Get{
     }
     public function __get($property)
     {
-    if ('name' === $property) {
+    if ($property !== null) {
     return $this->name;
     } else {
     throw new ParseError(sprintf('Undefined property
@@ -53,7 +53,13 @@ class Get{
     }
     }
     $get = new Get('Muhamad Surya Iksanudin');
-    echo $get->name;
+    echo $get->name . PHP_EOL;
+    try{
+        echo $get->name;
+    }catch (ParseError $p){
+        $p->getMessage();
+        
+    }
     echo PHP_EOL;
     
 
