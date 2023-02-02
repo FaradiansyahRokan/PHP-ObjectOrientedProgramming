@@ -14,7 +14,7 @@ throw new ParseError(sprintf('Undefined property
 }
 }
 $magic = new MagicMethod();
-echo $magic->name = "Rokan Subi Faradiansyah";
+echo $magic->name = "Rokan Subi Faradiansyah" . PHP_EOL;
 
 
 //  __toString
@@ -35,6 +35,29 @@ $student->name = "rokan";
 $student->kelas = "X RPL";
 
 $string = (string) $student;
+
+class Get{
+    private $name;
+    public function __construct($name)
+    {
+    $this->name = $name;
+    }
+    public function __get($property)
+    {
+    if ('name' === $property) {
+    return $this->name;
+    } else {
+    throw new ParseError(sprintf('Undefined property
+    %s in class %s', $property, __CLASS__));
+    }
+    }
+    }
+    $get = new Get('Muhamad Surya Iksanudin');
+    echo $get->name;
+    echo PHP_EOL;
+    
+
+    
 
 
 
