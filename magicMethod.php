@@ -52,13 +52,15 @@ class Get{
     }
     }
     }
-    $get = new Get('Muhamad Surya Iksanudin');
-    echo $get->name . PHP_EOL;
+    // $get = new Get('Muhamad Surya Iksanudin');
+    // echo $get->name . PHP_EOL;
     try{
-        echo $get->name;
+        $get = new Get('Muhamad Surya Iksanudin');
+        echo $get->name . PHP_EOL;
+        $get->__get("rokan");
     }catch (ParseError $p){
         $p->getMessage();
-        
+
     }
     echo PHP_EOL;
     
