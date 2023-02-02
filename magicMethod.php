@@ -58,11 +58,11 @@ class Get{
         $get = new Get('Muhamad Surya Iksanudin');
         echo $get->name . PHP_EOL;
         $get->__get("rokan");
+        $get->ppp;
     }catch (ParseError $p){
         $p->getMessage();
-
     }
-    echo PHP_EOL;
+    
     
 
     
