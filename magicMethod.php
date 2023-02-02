@@ -83,13 +83,25 @@ class unsets{
         'nama' => 'rokan',
         'alamat' => 'Bandung'
     ];
+
+    public function __unset($property)
+    {
+        if(isset($this->user[$property])){
+        unset($this->user[$property]);
+        }
+    }
 }
 
 $obj = new unsets;
-var_dump($obj);
-    
+// unset($obj->nama);
+// var_dump($obj);
 
-    
+
+
+// __sleep() dan __wakeup()
+
+
+
 
 
 
