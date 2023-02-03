@@ -26,4 +26,5 @@ return isset($this->container[$offset]) ? $this->container[$offset] : null;
 $object = new ArrayAccessClass();
 $object['name'] = 'Rokan Subhi Faradiansyah';
 $object['address'] = 'In your memory';
+$object['kelas'] = 'X RPL';
 var_dump($object);
