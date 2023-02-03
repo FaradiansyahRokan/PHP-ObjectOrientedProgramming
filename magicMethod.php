@@ -121,8 +121,10 @@ class Csleep extends sleep{
 }
 $slp = new sleep;
 $C = new Csleep;
-var_dump(serialize($slp));
-var_dump(serialize($C));
+// var_dump(serialize($slp));
+// var_dump(serialize($C));
+
+
 
 
 
