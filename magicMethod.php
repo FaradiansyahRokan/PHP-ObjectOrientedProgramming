@@ -124,7 +124,22 @@ $C = new Csleep;
 // var_dump(serialize($slp));
 // var_dump(serialize($C));
 
+class connection{
+    protected $link;
+    private $database , $password , $host , $port ;
+}
 
+
+class bamk{
+    private function database(){
+        echo "Anda Berhasil Masuk";
+    }
+
+    public function __call($name, $arguments)
+    {
+        
+    }
+}
 
 
 
