@@ -130,18 +130,25 @@ class connection{
 }
 
 
-class bamk{
-    private function database(){
+class bank{
+    private static function database($name){
         echo "Anda Berhasil Masuk";
     }
 
-    public function __call($name, $arguments)
+    public static function __callStatic($name, $arguments){
     {
-        
+        if('name' === 'database'){
+            return self::database($arguments);
+        }else{
+            throw new ParseError(sprintf("$name Tidak di Temukan"));
+        }
     }
+}
 }
 
 
+$bank = new bank;
+bank::database('rokan');
 
 
 
