@@ -6,3 +6,4 @@ $second = new SecondRuleCalculator($first);
 $third = new ThirdRuleCalculator($second);
 $fourth = new FourthRuleCalculator($third);
 
+
