@@ -1,4 +1,5 @@
 <?php
+namespace App\calculate;
 final class PPH21Calculator
 {
 private $calculators;

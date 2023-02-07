@@ -1,6 +1,13 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
+use App\calculate\FirstRuleCalculator;
+use App\calculate\SecondRuleCalculator;
+use App\calculate\ThirdRuleCalculator;
+use App\calculate\FourthRuleCalculator;
+use App\calculate\PPH21Calculator;
+
+
 
 $first = new FirstRuleCalculator();
 $second = new SecondRuleCalculator($first);
