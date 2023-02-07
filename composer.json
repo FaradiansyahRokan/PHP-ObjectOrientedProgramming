@@ -1,0 +1,29 @@
+{
+    "type": "library",
+    "license": "proprietary",
+    "name": "pph21/calculator",
+    "authors": [
+    {
+    "name": "Rokan",
+    "email": "rokansubhi.f@gmail.com",
+    "homepage": "https://github.com/FaradiansyahRokan"
+    }
+    ],
+    "require": {
+    "php": "^8.0"
+    },
+    "config": {
+    "preferred-install": {
+    "*": "dist"
+    },
+    "sort-packages": true,
+    "classmap-authoritative": true,
+    "optimize-autoloader": true
+    },
+    "autoload": {
+    "psr-4": {
+    "PPH21\\App\\": "src/"
+    }
+    }
+    }
+    
