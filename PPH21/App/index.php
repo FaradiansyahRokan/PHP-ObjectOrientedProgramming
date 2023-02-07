@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
-require_once 'init.php';
+
 
 $first = new FirstRuleCalculator();
 $second = new SecondRuleCalculator($first);

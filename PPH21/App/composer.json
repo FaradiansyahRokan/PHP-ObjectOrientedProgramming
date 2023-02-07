@@ -1,27 +1,38 @@
-{
-    "type":"library",
-    "license":"proprietary",
-    "name":"modernoop/pph21",
-    "authors":[{
-        "name":"Rokan Subhi F",
-        "email":"rokansubhi.f@gmail.com"
-    }],
+{   
     "require": {
-        "php":"^7.2"
-    },
-    "config": {
-        "preferred-install":{
-            "*":"dist"
-        },
-    "sort-packages": true,
-    "classmap-authoritative": true,
-    "optimize-autoloader": true
+    "monolog/monolog": "1.23.*"
     },
     "autoload": {
         "psr-4": {
-            "ModernOOP\\StudiKasus\\PPH21\\":"src/"
+        "PPH21\\App\\": "Calcualte/"
+        },
+        "type":"library",
+        "license":"proprietary",
+        "name":"modernoop/pph21",
+        "authors":[{
+            "name":"Rokan Subhi F",
+            "email":"rokansubhi.f@gmail.com"
+        }],
+        "require": {
+            "php":"^7.2"
+        },
+        "config": {
+            "preferred-install":{
+                "*":"dist"
+            },
+        "sort-packages": true,
+        "classmap-authoritative": true,
+        "optimize-autoloader": true
+        },
+        "autoload": {
+            "psr-4": {
+                "ModernOOP\\StudiKasus\\PPH21\\":"src/"
+            }
+        }
         }
     }
-}
+    
+   
+
 
     
