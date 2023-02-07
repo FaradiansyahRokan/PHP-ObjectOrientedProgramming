@@ -1,4 +1,5 @@
 <?php
+namespace App\calculate;
 interface CalculatorInterface
 {
 public function calculate(float $pkp): float;

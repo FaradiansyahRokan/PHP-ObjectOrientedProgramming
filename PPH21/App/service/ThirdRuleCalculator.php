@@ -1,4 +1,5 @@
 <?php
+namespace App\calculate;
 class ThirdRuleCalculator extends AbstractCalculator
 {
 public function maxPkp(): float

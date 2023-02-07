@@ -4,7 +4,7 @@
     },
     "autoload": {
         "psr-4": {
-        "PPH21\\App\\": "Calcualte/"
+        "PPH21\\App\\service\\": "Calcualte/"
         },
         "type":"library",
         "license":"proprietary",
