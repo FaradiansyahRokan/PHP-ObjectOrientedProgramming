@@ -22,7 +22,7 @@
     },
     "autoload": {
     "psr-4": {
-    "PPH21\\App\\": "src/"
+    "App\\Calculate\\": "App/service"
     }
     }
     }

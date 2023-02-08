@@ -1,11 +1,12 @@
 <?php
-require '../vendor/autoload.php';
+require './vendor/autoload.php';
 
-use App\calculate\FirstRuleCalculator;
-use App\calculate\SecondRuleCalculator;
-use App\calculate\ThirdRuleCalculator;
-use App\calculate\FourthRuleCalculator;
-use App\calculate\PPH21Calculator;
+use App\service\AbstractCalculator;
+use App\service\CalculatorInterface;
+use App\service\FirstRuleCalculator;
+use App\service\SecondRuleCalculator;
+use App\service\ThirdRuleCalculator;
+use App\service\FourthRuleCalculator;
 
 
 

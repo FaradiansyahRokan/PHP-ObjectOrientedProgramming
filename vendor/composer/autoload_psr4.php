@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'PPH21\\App\\' => array($baseDir . '/src'),
+    'App\\Calculate\\' => array($baseDir . '/App/service'),
 );
