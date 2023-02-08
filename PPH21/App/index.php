@@ -3,10 +3,10 @@ require './vendor/autoload.php';
 
 use App\service\AbstractCalculator;
 use App\service\CalculatorInterface;
-use App\service\FirstRuleCalculator;
-use App\service\SecondRuleCalculator;
-use App\service\ThirdRuleCalculator;
-use App\service\FourthRuleCalculator;
+use \App\service\FirstRuleCalculator;
+use \App\service\SecondRuleCalculator;
+use \App\service\ThirdRuleCalculator;
+use \App\service\FourthRuleCalculator;
 
 
 

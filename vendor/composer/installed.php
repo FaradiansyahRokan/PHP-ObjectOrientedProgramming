@@ -3,7 +3,7 @@
         'name' => 'pph21/calculator',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '8454531c9c449c32e47d13fa51f56df98f01f0f3',
+        'reference' => 'a81e6fce218a8a1c5caddb486669be1322af279f',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'pph21/calculator' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '8454531c9c449c32e47d13fa51f56df98f01f0f3',
+            'reference' => 'a81e6fce218a8a1c5caddb486669be1322af279f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
